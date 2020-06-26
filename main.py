@@ -11,7 +11,6 @@ url = "https://9gag.com"
 rurl = 'https://9gag.com/random?ref=9nav'
 directory = 'files/'
 filename = 'file_{}.jpg'
-threads = 2
 
 import sys
 from PyQt5 import QtCore, QtGui, QtWidgets
@@ -29,7 +28,6 @@ import urllib.parse
 
 import bs4 as bs
 import http.client
-from threading import Thread
 
 def unshorten_url(url):
     parsed = urllib.parse.urlparse(url)
@@ -88,7 +86,6 @@ class Render(QWebEngineView):
 
 
 def main():
-
     app = QApplication(sys.argv)
 
     web = Render(directory)

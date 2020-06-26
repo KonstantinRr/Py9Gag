@@ -1,0 +1,6 @@
+###### Requirements without Version Specifiers ######`
+PyQt5
+PyQtWebKit
+PyQtWebEngine
+lxml
+bs4
